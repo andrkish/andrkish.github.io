@@ -1,0 +1,138 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: wheat;
+    /*background-image: radial-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1) 115%), url(../img/background-image.jpg);*/
+    background-image: url(../img/background-image.jpg);
+    background-size: auto, 512px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 10px 0px 15px 0px;
+    color: goldenrod;
+    text-shadow: 3px 2px #222222;
+}
+
+#container {
+    width: 1400px;
+    margin: 0px auto;
+}
+
+#leftPanel, #rightPanel {
+    width: 220px;
+    height: 290px;
+    background-image: url(../img/paperback.png);
+    float: left;
+}
+
+#leftPanel {
+    margin: 0px 0px 0px 0px; 
+}
+
+#rightPanel {
+    margin: 0px 0px 0px 40px; 
+}
+
+#worldWrapper {
+    float: left;
+    width: 864px;
+    height: 504px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+}
+
+#world {
+    width: 864px;
+    height: 504px;
+    background: #888888;
+    border: 15px solid #333333;
+    border-image: url(../img/border-image.png) 50 round;
+    box-shadow: 8px 8px 12px #222222;
+    overflow: hidden;
+}
+
+#worldOverlay, #worldHover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 12px 12px;
+}
+
+#footer {
+    clear: both;
+}
+
+#worldFooter h3 {
+    margin: 8px;
+    width: 200px;
+    display: inline-block;
+}
+
+.actor-panel-ui {
+    width: 170px;
+    margin: 10px 20px auto;
+}
+
+.actor-avatar {
+    display: inline-block;
+    width: 80px;
+}
+
+.actor-image {
+    width: 72px;
+    height: 72px;
+}
+
+.actor-params {
+    width: 80px;
+    display: inline-block;
+}
+
+.turnButton {
+    margin: 8px;
+    background-color:#006377;
+    border-radius:3px;
+    border:1px solid #124d77;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:7px 30px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #154682;
+    box-shadow: 4px 4px 6px #222222;
+    position:relative;
+    left: 20%;
+}
+.turnButton:hover {
+    background-color:#0061a7;
+}
+.turnButton:active {
+    top:1px;
+}
+
+.title-team0, .title-team1, .title-team0-active, .title-team1-active {
+    text-align: center;
+    width: 80%;
+    margin: 15px 15px auto;
+}
+
+.title-team0-active {
+    border-bottom: 3px solid lightblue;
+}
+
+.title-team1-active {
+    border-bottom: 3px solid darkorange;
+}
